@@ -38,7 +38,15 @@ public abstract class Animal {
 	
 	public abstract Animal giveBirth();
 	
+	public static void inSoLuong() {
+		System.out.println("so luong con vat: " + population);
+	}
 	
-	protected void finalize(){}
+	
+    public void finalize() {
+        population--;
+        System.out.println("1 con vat da chet, so luong ca the la: " + population);
+        
+    }
 	
 }

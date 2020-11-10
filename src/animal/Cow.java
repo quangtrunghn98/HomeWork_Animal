@@ -26,4 +26,14 @@ public class Cow extends Animal {
 		// TODO Auto-generated method stub
 		return new Cow(getName()+ "'s baby");
 	}
+	
+	public static void inSoLuong() {
+		System.out.println("so luong bo: " + population);
+	}
+	
+	public void finalize() {
+	     population--;
+	     System.out.println("1 con bo da chet, so luong con; " + population);     
+	}
+	
 }

@@ -27,4 +27,17 @@ public class Cat extends Animal {
 		
 		return new Cat(getName() + "'s baby");
 	}
+	
+	public static void inSoLuong() {
+		System.out.println("so luong meo: " + population);
+	}
+	
+	
+	public void finalize() {
+	     population--;
+	     System.out.println("1 con meo da chet, so luong con: " + population);     
+	}
+	
 }
+
+
